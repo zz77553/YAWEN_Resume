@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HSU YA WEN - RESUME</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="Shortcut Icon" type="image/x-icon" href="assets/image/person.png"/>
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	 crossorigin="anonymous">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style lang="">
+	body {
+		background: #060e1b;
+		overflow: hidden;
+	}
+	#wrapper {
+		width: 100vw;
+		background-image: url('assets/image/index/bg.jpg');
+		background-size: cover;
+    	background-position: center;
+	}
+	.content {
+		width: 100vw;
+		height: 100vh;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		align-content: space-around;
+		padding: 0;
+	}
+	.logo_index {
+		padding-bottom: 5%;
+		z-index: 999;
+	}
+	.logo_index h1 {
+		font-family: 'PoplarStd';
+		font-size: 8vw;
+		font-weight: lighter;
+		color:#fff;
+		text-shadow: 0 0 10px rgba(255, 243, 204, 0.3);
+		z-index: 999;
+	}
+	.menubox_index {
+		width: 60vw;
+		display: inline-flex;
+		justify-content: space-around;
+		z-index: 999;
+	}
+	.menubox_index .menu_index a {
+		font-size: 2vw;
+		color: #fff;
+		padding: 10px 15px;
+		border: 1px solid #ccc;
+		transition: .3s;
+		border-top: none;
+		border-bottom: none;
+	}
+	.menubox_index .menu_index:hover a {
+		background-color: rgba(255, 255, 255, 0.3);
+		color: #000;
+		text-shadow: 0 0 2px  rgba(255, 255, 255, 0.5);
+		transition: .3s;
+	}
+	.footer {
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		flex-direction: column-reverse;
+		position: fixed;
+		z-index: 998;
+	}
+	.footer p {
+		font-size: 10px;
+		color: rgba(255, 255, 255, 0.2);
+		border: none;
+	}
+	canvas {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		opacity: 0.4;
+		-webkit-filter:contrast(5);
+	}
+	@media screen  and (max-width: 768px){
+		
+		.menubox_index {
+			height: 25vh;
+			flex-direction: column;
+			align-content: space-around;
+		}
+	} /*END of @media only screen and (max-width: 768px)*/
+
+</style>
+<body><canvas id="canvas"></canvas>
+<div id="wrapper" class="">
+<main>
+	<!-- 內容 -->
+	<div class="content layout-fixedObj">
+		<div class="logo_index"><h1>YA WEN'S RESUME</h1></div>
+		<div class="menubox_index" data-aos="fade-up" data-aos-duration="1000">
+			<div class="menu_index"><a href="AUTOBIOGRAPHY.html">AUTOBIOGRAPHY</a></div>
+			<div class="menu_index"><a href="PORTFOLIO.html">PORTFOLIO</a></div>
+		</div>
+		<div class="footer">
+			<p>Copyright © 2019 HSU YA WEN All rights reserved</p>
+		</div>
+	</div>
+</main>
+</div>
+<script src='js/jquery-3.2.1.min.js'></script>
+<script src='js/velocity.min.js'></script>
+<script src='js/modernizr.custom.21931.js'></script>
+<script src='js/floatObj.js'></script>
+<!-- <script src='js/sparksFloat.js'></script> -->
+<script src='js/sparks.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
+</body>
+</html>

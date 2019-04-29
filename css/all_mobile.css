@@ -1,0 +1,96 @@
+
+
+@media screen  and (max-width: 768px){
+
+
+/* ========= header ==========  */
+
+.menuBox {
+    display: none;
+}
+.HBBox {
+    width: 40px;
+    height: 40px;
+    background-color: rgba( 255, 255, 255, .4);
+    border: 1px solid #fff;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    box-shadow: 0 0 5px rgba( 0, 0, 0, .3);
+    cursor: pointer;
+    position: fixed;
+    z-index: 999;
+    right: 0;
+}
+.mobileMenu {
+    width: 75%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: -75%;
+    z-index: 100;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    background-color: #444453;
+    align-items: center;
+    justify-content: flex-start;
+}
+.HB {
+    font-size: 16px;
+    color: #555;
+    font-size: 40px;
+    letter-spacing: 0;
+    opacity: 0.7;
+}
+.mobileMenu .mobileMenuBox {
+    background-color: #444453;
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow-y: auto;
+    padding: 0 10%;
+    padding-top: 15%;
+}
+.mobileMenu .mobileMenuBox li {
+    border-bottom: 1px solid #aaa;  
+    border-top: 1px solid #aaa;
+    transition: .3s;
+}
+.mobileMenu .mobileMenuBox li {
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 5px 0;
+}
+.mobileMenu .mobileMenuBox li:hover {
+    background-color: rgba(255, 255, 255, .7);
+    transition: .3s;
+    color: #444453;
+}
+.menuBox {
+    display: none;
+}
+
+
+/* ========= content ==========  */
+
+
+.contentMainBox {
+    flex-direction: column-reverse;
+}
+.word, .photoBox {
+    width: 100% !important;
+}
+.word {
+    padding-top: 30px;
+}
+
+} /*END of @media only screen and (max-width: 768px)*/
+
+

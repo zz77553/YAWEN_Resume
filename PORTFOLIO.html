@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HSU YA WEN - PORTFOLIO</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="Shortcut Icon" type="image/x-icon" href="assets/image/person.png"/>
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/all_mobile.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	 crossorigin="anonymous">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style lang="">
+	.location {
+		border-bottom-color: rgb(205, 219, 219);
+	}
+	.location h2 {
+		background-color: rgb(95, 177, 177);
+	}
+	.location:after {
+		border-color: rgb(95, 177, 177);
+		border-left-color: transparent;
+		border-right-color: transparent;
+	}
+	.works {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.workBox {
+		display: flex;
+		max-width: 330px;
+		max-height: 330px;
+		min-width: 330px;
+		min-height: 330px;
+		/* margin: 0px 5px 30px; */
+		margin: 0px 1% 30px;
+		border: 1px solid #ddd;
+		flex-direction: column;
+		transition: .3s;
+	}
+	.workBox:hover {
+		box-shadow: 0 0 15px rgba(59, 112, 100, 0.7);
+		transition: .3s;
+	}
+	.workBox * {
+		color: #76797E;
+	}
+	.workImgBox {
+		width: 95%;
+		height: 95%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px 5px;
+		padding-bottom: 0;
+	}
+	.workImg {
+		width: 100%;
+		height: 100%;
+		background-color: #555;
+		box-sizing: border-box;
+		background-size: cover;
+		background-position: center;
+	}
+	#PODLP_work .workImg {
+		background-image: url('assets/image/PORTFOLIO/podlp.jpg');
+	}
+	#ankobookLP_work .workImg {
+		background-image: url('assets/image/PORTFOLIO/ankobooklp.jpg');
+	}
+	#podorder_work .workImg {
+		background-image: url('assets/image/PORTFOLIO/podorder.jpg');
+	}
+	#project_work .workImg {
+		background-image: url('assets/image/PORTFOLIO/gametopia.jpg');
+	}
+	#personal_work .workImg {
+		background-image: url('assets/image/PORTFOLIO/yinshumusic.jpg');
+	}
+	.workName, .technology {
+		display: flex;
+		align-items: baseline;
+		justify-content: flex-start;
+		padding: 0 4%;
+		/* max-width: 332px; */
+		flex-wrap: wrap;
+	}
+	.workName h2, .technology h3 {
+		padding: 3px 0;
+	}
+	.workName h2 {
+		width: 100%;
+		font-size: 15px;
+		padding-top: 15px;
+	}
+	.technology {
+		padding-bottom: 15px;
+	}
+	.technology h3, .technology span {
+		font-size: 12px;
+	}
+	.technology h3 {
+		color: rgb(78, 173, 177);
+	}
+	.technology span::after {
+		content: "/";
+		font-size: 13px;
+		color: rgb(161, 207, 186);
+		padding: 0 5px;
+	}
+	.technology span:last-child:after {
+		display: none;
+	}
+	@media screen  and (max-width: 768px){
+		
+		.works {
+			justify-content: space-around;
+		}
+		
+		.workBox {
+			margin: 0px 5px 30px;
+		}
+		.contentMainBox {
+			padding-top: 50px;
+		}
+	} /*END of @media only screen and (max-width: 768px)*/
+
+</style>
+<body>
+<div id="wrapper">
+<main>
+	<!-- menu -->
+	<comp-header></comp-header>
+	<!-- 內容 -->
+	<div class="content">
+		<div class="location">
+			<h2>PORTFOLIO</h2>
+		</div>
+		<div class="contentMainBox">
+			<div class="works">
+				<a href="http://www.podesign.com.tw/chinese/08_sp/sp_podesign.html" class="workBox" data-aos="fade-up" data-aos-duration="1000" id="PODLP_work">
+					<div class="workImgBox"><div class="workImg"></div></div>
+					<div class="workName"><h2>吉時印一頁式改版宣傳頁面</h2></div>
+					<div class="technology">
+						<h3>使用技術：</h3>
+						<span>html</span>
+						<span>css</span>
+						<span>jQuery</span>
+					</div>
+				</a>
+				<a href="https://ankobook.tw/activity/publisher" class="workBox" data-aos="fade-up" data-aos-duration="1000"  id="ankobookLP_work">
+					<div class="workImgBox"><div class="workImg"></div></div>
+					<div class="workName"><h2>燈籠魚一頁式招商宣傳頁面</h2></div>
+					<div class="technology">
+						<h3>使用技術：</h3>
+						<span>html</span>
+						<span>css</span>
+						<span>jQuery</span>
+					</div>
+				</a>
+				<a href="https://www.podesign.com.tw/pod/printService/printService.aspx" class="workBox" data-aos="fade-up" data-aos-duration="1000"  id="podorder_work">
+					<div class="workImgBox"><div class="workImg"></div></div>
+					<div class="workName"><h2>吉時印訂單系統前端介面</h2></div>
+					<div class="technology">
+						<h3>使用技術：</h3>
+						<span>html</span>
+						<span>css</span>
+						<span>jQuery</span>
+					</div>
+				</a>
+				<a href="http://140.115.236.72/demo-projects/AD103/AD103G2/gametopia/index.php" class="workBox" data-aos="fade-up" data-aos-duration="1000"  id="project_work">
+					<div class="workImgBox"><div class="workImg"></div></div>
+					<div class="workName"><h2>【分組專案】遊戲烏托邦</h2></div>
+					<div class="technology">
+						<h3>使用技術：</h3>
+						<span>html</span>
+						<span>css</span>
+						<span>JavaScript</span>
+						<span>jQuery</span>
+						<span>D3.js</span>
+					</div>
+				</a>
+				<a href="http://140.115.236.72/demo-personal/AD103/web/C1600437/layout/index.html" class="workBox" data-aos="fade-up" data-aos-duration="1000"  id="personal_work">
+					<div class="workImgBox"><div class="workImg"></div></div>
+					<div class="workName"><h2>【個人專案】音數旋律-台灣同人音樂販售網</h2></div>
+					<div class="technology">
+						<h3>使用技術：</h3>
+						<span>html</span>
+						<span>css</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<comp-footer></comp-footer>
+</main>
+</div>
+<script src='js/jquery-3.2.1.min.js'></script>
+<script src='js/mobileMenu.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+<script src="component/footer.js"></script>
+<script src="component/header.js"></script>
+<script src="js/headerAndFooter.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
+</body>
+</html>
